@@ -39,7 +39,7 @@ public class PdfUserController {
             .setPhone("13283860845")
             .setCreationTime(new Date());
         System.out.println(new Date());
-        boolean insert = pdfUserService.insert(user);
+        boolean insert = pdfUserService.save(user);
     }
 }
 

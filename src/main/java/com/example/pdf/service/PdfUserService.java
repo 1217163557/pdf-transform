@@ -2,7 +2,8 @@ package com.example.pdf.service;
 
 
 
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
+
 import com.example.pdf.entity.PdfUser;
 import org.springframework.stereotype.Service;
 

@@ -6,10 +6,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
+@EnableTransactionManagement
 @MapperScan(basePackages = "com.example.pdf.mapper")
 public class PdfApplication {
     private final static Logger logger= LoggerFactory.getLogger(PdfApplication.class);

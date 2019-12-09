@@ -10,8 +10,9 @@ spring:
       view:
         prefix: /templates
       locale: zh_CN
-
-
+  devtools:
+    restart:
+      enabled: false
 server:
   port: 7081
 
@@ -19,5 +20,22 @@ mybatis-plus:
   type-aliases-package: com.example.pdf.entity
   mapper-locations: classpath*:com/example/pdf/**/xml/*.xml
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #延打印sql语句
+    lazy-loading-enabled: true #延时加载的开关
+    cache-enabled: true #缓存开关
+  global-config:
+    id-type: 0 #0:数据库ID自增   1:用户输入id  2:全局唯一id(IdWorker)  3:全局唯一ID(uuid)
+    db-column-underline: true #是否使用下划线
+    refresh-mapper: true
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+
+    sql-parser-cache: true
+
+
+logging:
+  level.root: info
+  level.com.stylefeng: debug
+  file:
+    path: logs/
 

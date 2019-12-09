@@ -2,7 +2,8 @@ package com.example.pdf.service.impl;
 
 
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
 import com.example.pdf.entity.PdfUser;
 import com.example.pdf.mapper.PdfUserMapper;
 import com.example.pdf.service.PdfUserService;
