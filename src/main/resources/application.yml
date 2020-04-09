@@ -13,6 +13,14 @@ spring:
   devtools:
     restart:
       enabled: false
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false
+    check-template-location: true
+    prefix: classpath:/templates/
 server:
   port: 7081
 
@@ -38,4 +46,6 @@ logging:
   level.com.stylefeng: debug
   file:
     path: logs/
+
+
 
