@@ -300,12 +300,7 @@ public class TimeUtils {
         return sb.append(fields[field]);
     }
 
-    public int hashCode() {
-        final int PRIME = 31;
-        int result = 1;
-        result = PRIME * result + Arrays.hashCode(fields);
-        return result;
-    }
+
 
     public boolean equals(Object obj) {
         if (this == obj)
