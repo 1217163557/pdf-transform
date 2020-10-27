@@ -12,7 +12,11 @@ import java.util.Map;
  */
 public class JedisUtil {
 
+
+
+
     private Jedis jedis;
+    private Jedis jedis1;
 
     public JedisUtil(String host, int port) {
         jedis=new Jedis(host,port);
